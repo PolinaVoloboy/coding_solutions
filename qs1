@@ -1,0 +1,12 @@
+// if string has all unigue characters
+
+function hasDublicate(str) {
+    str.sort();
+
+    for (var i = 1; i < str.length; i ++) {
+        if (str[i] === str[i-1]) {
+            return false;
+        }
+    }
+    return true;
+}
